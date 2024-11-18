@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import Box from '@mui/material/Box';
-import Paper from '@mui/material/Paper';
 import Grid2 from '@mui/material/Grid2';
 import Button from '@mui/material/Button';
 import Card from '@mui/material/Card';
