@@ -41,3 +41,60 @@
 )}
 </CardContent>
 </Card>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<Card className='card'>
+          <CardContent>
+            <div className='reciept'><img src={pos}></img></div>
+
+            <br></br>
+            <Typography className='second' variant="h6" component="h2">
+           <span className='mssg'>You selected {rating} out of 5</span>  
+            </Typography>
+<br></br> 
+<Typography className='thanks' variant="h4" component="h2"> Thank You! </Typography>
+            <Typography
+              style={{
+                marginTop: 8,
+                color: "#5e6671",
+                textAlign: 'center',
+              }}>
+           <p>We appreciate you taking the time to give a rating. If you ever need more support, don't hesitate to get in touch!</p>   
+            </Typography>
+            
+            {!submitted ? (
+          <div>
+
+            <div>
+              
+              <br></br>
+            </div>
+           
+          </div>
+        ) : (
+          <div>
+            <h2>Thank you for your feedback!</h2>
+          </div>
+        )}
+          </CardContent>
+        </Card>

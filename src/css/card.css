@@ -73,7 +73,6 @@ Button.button.active {
 /* code to design the text below the image of the second page */
 .feed .second {
     margin-bottom: 10px;
-    
     display: flex;
     justify-content: center;
     align-items: center;
@@ -85,6 +84,14 @@ Button.button.active {
     display: inline-block;
     background-color: #1b222c;
     border-radius: 25px;
+    font-size: medium;
+}
+
+/* thank you message */
+.feed .thanks {
+    text-align: center;
+    color: white;
+    font-weight: bold;
 }
 /* code to design the card responsiveness */
 @media screen and (min-width: 501px) {
@@ -92,3 +99,4 @@ Button.button.active {
         width: 400px;
     }
     }
+
