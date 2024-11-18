@@ -1,0 +1,20 @@
+.App {
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    height: 100vh;  
+    background-color: #141519;        
+}
+
+
+
+ 
+
+@media screen and (max-width: 500px) { 
+    .App {
+        padding: 20px;
+    }
+}
+
+
+

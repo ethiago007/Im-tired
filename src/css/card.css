@@ -1,0 +1,94 @@
+/* code to desgin the card */
+.feed .card { 
+    padding: 10px;
+    border-radius: 15px;
+    background-color: #202731;
+} 
+
+/* code to design the star at the edge for the card */
+.feed .card .starImg {
+    background-color: #1b222c;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+/* code to design the text below the image */
+.feed .card .first {
+    color: white;
+}
+
+/* code to design the number buttons */
+Button.button {
+    color: white;
+    background-color: #1b222c;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    border: #1b222c;
+    cursor: pointer;
+    transition: all 200ms ease-in-out;
+
+    &:hover {
+        background-color: orange;
+        color: black;
+    }
+
+
+}
+
+/* code to design the number button when active */
+Button.button.active {
+    background-color: white;
+    color: black;
+}
+
+/* code to design the submit button */
+.feed .feedSubmit {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    letter-spacing: 2px;
+    background-color: orange;
+    border-radius: 25px;
+    width: 100%;
+    border: orange;
+    transition: all 200ms ease-in-out;
+
+    &:hover {
+        background-color: white;
+    }
+}
+
+/* code to design the second page image */
+.feed img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* code to design the text below the image of the second page */
+.feed .second {
+    margin-bottom: 10px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.feed .second .mssg {
+    color: #ffa500;
+    padding: 5px 20px;
+    display: inline-block;
+    background-color: #1b222c;
+    border-radius: 25px;
+}
+/* code to design the card responsiveness */
+@media screen and (min-width: 501px) {
+    .feed .card {
+        width: 400px;
+    }
+    }

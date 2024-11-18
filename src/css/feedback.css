@@ -1,0 +1,43 @@
+<Card className='card'>
+<CardContent>
+  <div className='starImg'><img src={star}></img></div>
+
+  <br></br>
+  <Typography className='first' variant="h5" component="h2">
+    How did we do?
+  </Typography>
+
+  <Typography
+    style={{
+      marginTop: 8,
+      color: "#5e6671"
+    }}
+
+  >
+    Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!
+  </Typography>
+  <br></br>
+  {!submitted ? (
+<div>
+
+  <div>
+    <Box sx={{ flexGrow: 1 }}>
+      <Grid container spacing={{ xs: 2, md: 3 }} columns={{ xs: 10, sm: 20, md: 20 }}>
+        {[1, 2, 3, 4, 5].map((num) => (
+          <Grid key={num} size={{ xs: 2, sm: 4, md: 4 }}>
+            <button className= {` button ${rating === num ? 'active' : ''}`} key={num} onClick={() => {handleButtonClick(num);}}  >{num}</button>
+          </Grid>
+        ))}
+      </Grid>
+    </Box>
+    <br></br>
+  </div>
+  <Button className='feedSubmit' onClick={handleSubmit} >Submit</Button>
+</div>
+) : (
+<div>
+  <h2>Thank you for your feedback!</h2>
+</div>
+)}
+</CardContent>
+</Card>
